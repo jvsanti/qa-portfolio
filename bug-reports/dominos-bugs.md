@@ -1,6 +1,35 @@
-# Domino's Brasil — Bugs Found (dominos.com.br) — Real Production Site
+# Domino's Brazil — Bugs Found
 
-**DOM-001 — Major / High priority.** Cart page does not enforce a product quantity limit, eventually breaking checkout.
-Steps: add a product → repeatedly increase quantity via "+" well beyond a normal order size. Actual: error modal "Ops! Algo deu errado" (error code PLS-JFT5SR4) appears, and Subtotal/Total values stop updating. Expected: a reasonable maximum quantity per item should be enforced before the app breaks.
+![env](https://img.shields.io/badge/ENV-Real_Production-brightgreen?style=flat-square) `dominos.com.br`
 
-**DOM-002 — Minor / Low priority.** "PIZZA GRANDE R$44,90/CADA" promotion description contains a duplicated word ("ou ou monte" instead of "ou monte").
+Real production e-commerce site.
+
+---
+
+### `DOM-001` Cart has no quantity cap — checkout breaks
+
+![Major](https://img.shields.io/badge/SEVERITY-MAJOR-orange?style=flat-square) `Priority: High`
+
+**Steps to reproduce**
+1. Add a product to the cart
+2. Repeatedly increase quantity via the '+' button well beyond a normal order size
+
+**Expected:** A reasonable maximum quantity per item should be enforced before the app breaks.
+
+**Actual:** Error modal 'Ops! Algo deu errado' appears (error code PLS-JFT5SR4), and Subtotal/Total stop updating.
+
+---
+
+### `DOM-002` Duplicated word in promo description
+
+![Minor](https://img.shields.io/badge/SEVERITY-MINOR-blue?style=flat-square) `Priority: Low`
+
+**Steps to reproduce**
+1. Open the homepage
+2. Read the 'PIZZA GRANDE R$44,90/CADA' promotion description
+
+**Expected:** "...ou monte sua própria pizza..."
+
+**Actual:** Duplicated word: "...ou **ou** monte..."
+
+---

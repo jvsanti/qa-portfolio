@@ -1,35 +1,91 @@
-# OWASP Juice Shop — Checklist Execution (Registration + Login)
+# OWASP Juice Shop — Checklist Execution
 
-Structured requirement-based checklists, executed and tracked with Pass/Fail per item.
+![env](https://img.shields.io/badge/ENV-Training_App-lightgrey?style=flat-square) `OWASP security-training platform (not production)`
 
-## Registration Form — 10/10 executed, 8 Passed, 2 Failed
+Structured requirement-based checklists for Registration and Login, executed and tracked Pass/Fail. Registration: 10/10 executed, 8 passed, 2 failed. Login: 10/10 executed, 6 passed, 4 failed.
 
-| # | Requirement | Priority | Result |
-|---|---|---|---|
-| 1 | Email field accepts only a valid email address | High | Passed |
-| 2 | Email field rejects an already-registered address | High | Passed |
-| 3 | Password must be ≥8 characters | Critical | **Failed** |
-| 4 | Password must contain lowercase, uppercase, digit, and special symbol | Critical | **Failed** |
-| 5 | Repeat Password must match Password | Critical | Passed |
-| 6 | "Show password advice" toggle disabled by default | High | Passed |
-| 7 | "Show password advice" displays all requirements when activated | High | Passed |
-| 8 | Security Question dropdown displays options | High | Passed |
-| 9 | Email/Password/Repeat/Security Q&A are mandatory | Critical | Passed |
-| 10 | "Already a customer?" links to login | High | Passed |
+---
 
-**Finding of note:** the two failed checks (#3, #4) mean the app's actual password policy does not enforce its own stated complexity requirements — a real gap with security relevance, not just cosmetic.
+### `JS-REG-01` Password minimum length not enforced
 
-## Login Form — 10/10 executed, 6 Passed, 4 Failed
+![Critical](https://img.shields.io/badge/SEVERITY-CRITICAL-red?style=flat-square) `Priority: Critical`
 
-| # | Requirement | Priority | Result |
-|---|---|---|---|
-| 1 | Email and Password fields present | Critical | Passed |
-| 2 | Login succeeds with valid registered credentials | Critical | Passed |
-| 3 | "Remember me" keeps the user logged in | Critical | **Failed** |
-| 4 | Login works via Enter key (not just button click) | High | **Failed** |
-| 5 | Log in button disabled by default (before fields filled) | High | **Failed** |
-| 6 | Invalid credentials are rejected | High | Passed |
-| 7 | "Invalid email or password" message shown on failed login | High | Passed |
-| 8 | "Not yet a customer?" links to Registration | High | Passed |
-| 9 | "Forgot your password?" link works | High | **Failed** |
-| 10 | Password becomes visible via "Show password" | High | Passed |
+**Steps to reproduce**
+1. Go to the Registration form
+2. Enter a password shorter than 8 characters
+3. Submit
+
+**Expected:** Form should reject passwords under 8 characters.
+
+**Actual:** Short password is accepted with no error — the form does not enforce its own stated policy.
+
+---
+
+### `JS-REG-02` Password complexity not enforced
+
+![Critical](https://img.shields.io/badge/SEVERITY-CRITICAL-red?style=flat-square) `Priority: Critical`
+
+**Steps to reproduce**
+1. Go to the Registration form
+2. Enter a password with no uppercase, digit, or special character
+3. Submit
+
+**Expected:** Form should require uppercase, digit, and special character as stated in the password advice.
+
+**Actual:** Weak password accepted without any complexity validation.
+
+---
+
+### `JS-LOGIN-01` 'Remember me' does not persist session
+
+![Moderate](https://img.shields.io/badge/SEVERITY-MODERATE-yellow?style=flat-square) `Priority: Medium`
+
+**Steps to reproduce**
+1. Log in with 'Remember me' checked
+2. Close and reopen the browser
+
+**Expected:** User should remain logged in.
+
+**Actual:** User is logged out — the option has no effect.
+
+---
+
+### `JS-LOGIN-02` Enter key does not submit login form
+
+![Minor](https://img.shields.io/badge/SEVERITY-MINOR-blue?style=flat-square) `Priority: Medium`
+
+**Steps to reproduce**
+1. Fill Email and Password
+2. Press Enter instead of clicking the login button
+
+**Expected:** Form submits and logs the user in.
+
+**Actual:** Nothing happens — only clicking the button works.
+
+---
+
+### `JS-LOGIN-03` Login button not disabled by default
+
+![Minor](https://img.shields.io/badge/SEVERITY-MINOR-blue?style=flat-square) `Priority: Medium`
+
+**Steps to reproduce**
+1. Open the login form before filling any field
+
+**Expected:** Log in button should be disabled until required fields are filled.
+
+**Actual:** Button is clickable by default, before any input.
+
+---
+
+### `JS-LOGIN-04` 'Forgot your password?' link non-functional
+
+![Moderate](https://img.shields.io/badge/SEVERITY-MODERATE-yellow?style=flat-square) `Priority: Medium`
+
+**Steps to reproduce**
+1. On the login form, click 'Forgot your password?'
+
+**Expected:** User is taken to a password-recovery flow.
+
+**Actual:** Link does not work as expected.
+
+---

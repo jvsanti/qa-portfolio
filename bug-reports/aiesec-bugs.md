@@ -1,13 +1,35 @@
-# AIESEC (aiesec.org) — Bugs Found in Production
+# AIESEC — Bugs Found
 
-Real bugs found on a live production website (not a training app), during exploratory testing of the public site.
+![env](https://img.shields.io/badge/ENV-Real_Production-brightgreen?style=flat-square) `aiesec.org`
 
-**Bug 1 — Minor.** Typo in the "We create value-driven leaders" homepage section.
-- Steps: Go to AIESEC → scroll to that section.
-- Expected: "AIESEC enables you to develop the values we believe leaders should live by."
-- Actual: "...develop **thev** values..." (typo: "thev" instead of "the").
+Real bugs found on a live production website during exploratory testing of the public site.
 
-**Bug 2 — Minor.** Typo/duplication in the "Premium Global Partners" paragraph, Global Talent page.
-- Steps: Go to /global-talent → scroll to the paragraph below "AIESEC's Premium Global Partners are top organizations...".
-- Expected: "...present in different Countries/Territories around the world."
-- Actual: "...present in different Countries/Territories **and territiories** around the world" (misspelled + redundant word).
+---
+
+### `AIESEC-001` Typo in homepage value-driven-leaders section
+
+![Minor](https://img.shields.io/badge/SEVERITY-MINOR-blue?style=flat-square) `Priority: Low`
+
+**Steps to reproduce**
+1. Go to aiesec.org
+2. Scroll to the 'We create value-driven leaders' section
+
+**Expected:** "AIESEC enables you to develop the values we believe leaders should live by."
+
+**Actual:** Typo: "...develop **thev** values..." instead of "the values".
+
+---
+
+### `AIESEC-002` Typo/duplication on Global Talent page
+
+![Minor](https://img.shields.io/badge/SEVERITY-MINOR-blue?style=flat-square) `Priority: Low`
+
+**Steps to reproduce**
+1. Go to /global-talent
+2. Scroll to the paragraph below 'AIESEC's Premium Global Partners...'
+
+**Expected:** "...present in different Countries/Territories around the world."
+
+**Actual:** "...present in different Countries/Territories **and territiories** around the world" (misspelled + redundant word).
+
+---
