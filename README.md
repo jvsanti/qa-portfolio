@@ -11,7 +11,7 @@
 
 Practical work from my QA Engineering certification (Mate Academy): test planning, test case design, execution, and bug reporting. Some of it on training apps (Conduit, PetStore, OWASP Juice Shop), some on real live production sites (AIESEC, Domino's Brazil).
 
-Before software QA, I spent 6+ years as a Quality Analyst in automotive manufacturing (IATF 16949 / ISO 9001), as an on-site resident for an OEM client (Stellantis, Nissan). The root-cause logic I use there — 8D, Pareto, Ishikawa — is the same one I applied here to investigate bugs.
+Before software QA, I spent 6+ years as a Quality Analyst in automotive manufacturing (IATF 16949 / ISO 9001), as an on-site resident for an OEM client (Stellantis, Nissan). The root-cause logic I use there — 8D, Pareto, Ishikawa — is the same one I applied here to investigate bugs. In that role I also built ARGOSYS, a full-stack quality-inspection system (React/TypeScript/Supabase) used in the field at WHB/Stellantis.
 
 ## Contents
 
