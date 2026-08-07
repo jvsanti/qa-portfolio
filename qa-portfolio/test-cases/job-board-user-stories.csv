@@ -1,0 +1,37 @@
+TC ID,User Story,Summary,Priority
+TC-001,"As a job seeker, I want to filter vacancies by experience + technology",Selecting only the Experience filter shows vacancies matching that range regardless of technology,Medium
+TC-002,Same,Selecting only the Technology filter shows vacancies matching that technology regardless of experience,Medium
+TC-003,Same,Selecting Experience and Technology together shows only vacancies matching both criteria,High
+TC-004,Same,Vacancy list updates immediately after selecting a filter without full page reload,High
+TC-005,Same,Vacancy list updates immediately after removing a filter without full page reload,Medium
+TC-006,Same,Vacancy list updates automatically when switching Technology option without full page reload,Medium
+TC-007,Same,"""No vacancies found for the selected filters"" message shown when combined filter matches zero vacancies",Medium
+TC-008,Same,"""No vacancies found"" message disappears once filter is adjusted to match at least one vacancy",Low
+TC-009,Same,"""No vacancies found"" message not shown when no filter applied and vacancies exist",Low
+TC-010,"As a job seeker, I want selected filters shown as removable tags",A tag is displayed for the selected Experience filter,Medium
+TC-011,Same,A tag is displayed for the selected Technology filter,Medium
+TC-012,Same,Two separate tags displayed when both filters selected,Medium
+TC-013,Same,Clicking x on the Experience tag removes only that filter and keeps Technology active,High
+TC-014,Same,Clicking x on the Technology tag removes only that filter and keeps Experience active,High
+TC-015,Same,Vacancy list updates automatically after a tag is removed,Medium
+TC-016,Same,"""Clear all filters"" link displayed when at least one filter is active",Low
+TC-017,Same,"""Clear all filters"" link not displayed when no filter is active",Low
+TC-018,Same,Clicking Clear all filters removes all tags and shows the full unfiltered list,High
+TC-019,"As a job seeker, I want to save my filter combination as default search","""Save this search"" button displayed to logged-in user after applying a filter",High
+TC-020,Same,"""Save this search"" option not displayed to a guest user",High
+TC-021,Same,"""Save this search"" button not available when no filter applied",Medium
+TC-022,Same,Saved Experience/Technology filters auto-applied when user revisits Vacancies page,High
+TC-023,Same,Vacancy list on page load matches saved filter combination results,Medium
+TC-024,Same,Saved filters from one account are not applied to a different user's session,Critical
+TC-025,Same,User can update saved search filter values from profile settings,Medium
+TC-026,Same,User can remove saved search from profile settings,Medium
+TC-027,Same,Vacancies page loads with no filters applied after saved search removed,Medium
+TC-028,"As a recruiter, I want to compare my vacancy's performance with previous ones","""Compare with previous vacancies"" section displayed on vacancy statistics page",Medium
+TC-029,Same,Comparison uses only vacancies within the same job category,High
+TC-030,Same,Comparison calculates average using exactly the last 5 previous vacancies in category,Medium
+TC-031,Same,"""Not enough data to compare"" message shown when recruiter has 0 previous vacancies in category",Medium
+TC-032,Same,"""Not enough data to compare"" message shown when recruiter has exactly 1 previous vacancy",Medium
+TC-033,Same,Comparison data (not the message) shown when recruiter has exactly 2 previous vacancies,Medium
+TC-034,Same,Vacancy owner (recruiter) can see the Compare section,High
+TC-035,Same,A different recruiter (not owner) cannot see the Compare section,Critical
+TC-036,Same,A guest (not logged-in) user cannot see the Compare section,Critical
