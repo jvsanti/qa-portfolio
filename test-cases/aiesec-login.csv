@@ -1,0 +1,6 @@
+TC ID,Summary,Precondition,Priority
+TC-001,User is able to log in with a valid registered email and correct password,User is registered on the AIESEC Opportunities Portal,Critical
+TC-002,User is able to log in using the Continue with Google button,User has a Google account linked to an existing AIESEC profile,High
+TC-003,Email field accepts a valid email format without displaying a validation error,-,Medium
+TC-004,Password entered in the Password field is masked,A valid email is entered and Continue is clicked,Low
+TC-005,User remains logged in after refreshing the page following a successful login,User is logged in,Medium
