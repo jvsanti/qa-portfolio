@@ -11,7 +11,11 @@
 
 Practical work from my QA Engineering certification (Mate Academy): test planning, test case design, execution, and bug reporting. Some of it on training apps (Conduit, PetStore, OWASP Juice Shop), some on real live production sites (AIESEC, Domino's Brazil).
 
-Before software QA, I spent 6+ years as a Quality Analyst in automotive manufacturing (IATF 16949 / ISO 9001), as an on-site resident for an OEM client (Stellantis, Nissan). The root-cause logic I use there — 8D, Pareto, Ishikawa — is the same one I applied here to investigate bugs. In that role I also built ARGOSYS, a full-stack quality-inspection system (React/TypeScript/Supabase) used in the field at WHB/Stellantis.
+Before software QA, I spent 6+ years as a Quality Analyst in automotive manufacturing (IATF 16949 / ISO 9001), as an on-site resident for an OEM client (Stellantis, Nissan). The root-cause logic I use there — 8D, Pareto, Ishikawa — is the same one I applied here to investigate bugs. In that role I also built ARGOSYS, a full-stack quality-inspection system used in the field at WHB/Stellantis.
+
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 
 ## Contents
 
@@ -43,8 +47,8 @@ Two worth reading in full: the **Domino's Brazil** checkout bug (real production
 
 ## Stack
 
-SQL, Git, HTML/CSS, JavaScript, Postman, Jira, TestRail, Playwright.
+SQL, Git, HTML/CSS, JavaScript, Postman, Jira, TestRail, Playwright, TypeScript, React, Supabase.
 
 ## Contact
 
-jv.santiago@live.com · [LinkedIn](https://linkedin.com/in/jvsanti)
+ · [LinkedIn](https://linkedin.com/in/jvsanti)
