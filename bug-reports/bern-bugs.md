@@ -1,6 +1,6 @@
 # Bern.com — Bugs Found (Localization)
 
-![env](https://img.shields.io/badge/ENV-Practice_Site-lightgrey?style=flat-square) `bern.com`
+![env](https://img.shields.io/badge/ENV-Real_Production-brightgreen?style=flat-square) `bern.com`
 
 ---
 
