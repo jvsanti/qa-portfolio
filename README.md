@@ -29,11 +29,11 @@ Before software QA, I spent 6+ years as a Quality Analyst in automotive manufact
 | [Domino's Brazil](./bug-reports/dominos-bugs.md) | Real production | 2 | Major |
 | [AIESEC](./bug-reports/aiesec-bugs.md) | Real production | 2 | Minor |
 | [Bern.com](./bug-reports/bern-bugs.md) | Practice site | 2 | Major |
-| [Global Lives Project](./bug-reports/globallives-bugs.md) | Practice site | 2 | Moderate |
-| [Stellarium](./bug-reports/stellarium-bugs.md) | Practice site | 2 | Minor |
-| [Cinks Labs](./bug-reports/cinks-labs-bugs.md) | Practice site | 2 | Minor |
+| [Global Lives Project](./bug-reports/globallives-bugs.md) | Real production | 2 | Moderate |
+| [Stellarium](./bug-reports/stellarium-bugs.md) | Real production | 2 | Minor |
+| [Cinks Labs](./bug-reports/cinks-labs-bugs.md) | Real production | 2 | Minor |
 | [EnergyTelecom](./bug-reports/energytelecom-bugs.md) | Practice site | 3 | Moderate |
-| [Lumos](./bug-reports/lumos-bugs.md) | Practice site | 1 | Moderate |
+| [Lumos](./bug-reports/lumos-bugs.md) | Real production | 1 | Moderate |
 | [OWASP Juice Shop](./bug-reports/juice-shop-checklists.md) | Security training | 6 | Critical |
 | [Sweet Shop](./bug-reports/sweetshop-bugs.md) | Training app | 2 | Moderate |
 | [Conduit (RealWorld)](./bug-reports/conduit-realworld-bugs.md) | Training app | 3 | Major |
