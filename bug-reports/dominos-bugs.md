@@ -14,7 +14,7 @@ Real production e-commerce site.
 1. Add a product to the cart
 2. Repeatedly increase quantity via the '+' button well beyond a normal order size
 
-**Expected:** A reasonable maximum quantity per item should be enforced before the app breaks.
+**Expected:** The cart enforces a reasonable maximum quantity per item before the total breaks.
 
 **Actual:** Error modal 'Ops! Algo deu errado' appears (error code PLS-JFT5SR4), and Subtotal/Total stop updating.
 

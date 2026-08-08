@@ -12,7 +12,7 @@
 1. Add an out-of-stock product ('Adult Male Amazon Parrot', In Stock? = false) to the cart
 2. Go to checkout
 
-**Expected:** Checkout should be blocked for out-of-stock items.
+**Expected:** Checkout is blocked for out-of-stock items.
 
 **Actual:** Proceed to Checkout button stays enabled and checkout proceeds normally.
 
@@ -26,7 +26,7 @@
 1. Add a product to the cart
 2. Enter 999 in the Quantity field
 
-**Expected:** A reasonable maximum should be enforced.
+**Expected:** Quantity has a reasonable maximum enforced.
 
 **Actual:** Value accepted with no validation — Total Cost becomes $193,499,806.50.
 
@@ -40,7 +40,7 @@
 1. Reach the payment step
 2. Enter '999 9999 9999 adasdasda' in the Card Number field
 
-**Expected:** Field should validate card number format.
+**Expected:** Field validates card number format.
 
 **Actual:** Value is accepted; Continue button stays enabled.
 
@@ -54,7 +54,7 @@
 1. Trigger the unlimited-quantity bug (PS-CO-02)
 2. Confirm the order
 
-**Expected:** Order should be confirmed normally, or a clear user-facing error shown.
+**Expected:** Order is confirmed normally, or a clear user-facing error is shown.
 
 **Actual:** Server returns HTTP 500 (DataIntegrityViolationException — numeric value out of range on ORDERS.TOTALPRICE), consistent with the order total exceeding the database column's numeric capacity.
 

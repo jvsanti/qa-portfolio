@@ -1,6 +1,6 @@
 # Stellarium — Bugs Found (Localization)
 
-![env](https://img.shields.io/badge/ENV-Real_Production-brightgreen?style=flat-square) `stellarium.org`
+![env](https://img.shields.io/badge/ENV-Practice_Site-lightgrey?style=flat-square) `stellarium.org`
 
 ---
 
@@ -12,7 +12,7 @@
 1. Open the Portuguese (pt_BR) version of the site
 2. Scroll to the 'recursos' (features) section
 
-**Expected:** All bullet points should be in Portuguese.
+**Expected:** All bullet points are in Portuguese.
 
 **Actual:** Several bullets remain in English, e.g. "extra catalogues with more than 220 million stars".
 
@@ -26,7 +26,7 @@
 1. Open the pt_BR page
 2. Go to the 'colaborar' (collaborate) section
 
-**Expected:** Each link should have a distinct, accurate label.
+**Expected:** Each link has a distinct, accurate label.
 
 **Actual:** Two different links are both labeled "apresentações" — one goes to /scripts.html, the other to /doc/26.0/scripting.html.
 

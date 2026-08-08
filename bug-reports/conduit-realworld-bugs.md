@@ -42,7 +42,7 @@
 2. Enter clearly invalid username/email/password (e.g. '@@' / '!@1' / '.')
 3. Submit
 
-**Expected:** Form should validate username, email, and password formats.
+**Expected:** Form validates username, email, and password formats.
 
 **Actual:** Account is created successfully despite invalid input in all three fields.
 

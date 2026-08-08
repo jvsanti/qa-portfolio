@@ -1,6 +1,6 @@
 # Cinks Labs — Bugs Found
 
-![env](https://img.shields.io/badge/ENV-Real_Production-brightgreen?style=flat-square) `cinkslabs.com`
+![env](https://img.shields.io/badge/ENV-Practice_Site-lightgrey?style=flat-square) `cinkslabs.com`
 
 ---
 
@@ -13,7 +13,7 @@
 2. Enter a non-numeric/invalid value in the Phone Number field
 3. Submit
 
-**Expected:** Form should validate phone number format before submission.
+**Expected:** Phone Number field validates format before submission.
 
 **Actual:** Form submits successfully with no format validation.
 
@@ -28,7 +28,7 @@
 2. Enter an extremely long comment
 3. Submit
 
-**Expected:** A reasonable character limit should be enforced.
+**Expected:** The comment field enforces a reasonable character limit.
 
 **Actual:** Comment is accepted with no limit, breaking the page layout (extreme page length).
 

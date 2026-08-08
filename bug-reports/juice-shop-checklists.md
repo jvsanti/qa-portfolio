@@ -15,7 +15,7 @@ Structured requirement-based checklists for Registration and Login, executed and
 2. Enter a password shorter than 8 characters
 3. Submit
 
-**Expected:** Form should reject passwords under 8 characters.
+**Expected:** Form rejects passwords under 8 characters.
 
 **Actual:** Short password is accepted with no error — the form does not enforce its own stated policy.
 
@@ -30,7 +30,7 @@ Structured requirement-based checklists for Registration and Login, executed and
 2. Enter a password with no uppercase, digit, or special character
 3. Submit
 
-**Expected:** Form should require uppercase, digit, and special character as stated in the password advice.
+**Expected:** Form requires uppercase, digit, and special character, as stated in the password advice.
 
 **Actual:** Weak password accepted without any complexity validation.
 
@@ -44,7 +44,7 @@ Structured requirement-based checklists for Registration and Login, executed and
 1. Log in with 'Remember me' checked
 2. Close and reopen the browser
 
-**Expected:** User should remain logged in.
+**Expected:** User remains logged in.
 
 **Actual:** User is logged out — the option has no effect.
 
@@ -60,7 +60,7 @@ Structured requirement-based checklists for Registration and Login, executed and
 
 **Expected:** Form submits and logs the user in.
 
-**Actual:** Nothing happens — only clicking the button works.
+**Actual:** The form does not submit and no login attempt is triggered; only clicking the button works.
 
 ---
 
@@ -71,7 +71,7 @@ Structured requirement-based checklists for Registration and Login, executed and
 **Steps to reproduce**
 1. Open the login form before filling any field
 
-**Expected:** Log in button should be disabled until required fields are filled.
+**Expected:** Log in button is disabled until required fields are filled.
 
 **Actual:** Button is clickable by default, before any input.
 
