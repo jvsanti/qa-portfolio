@@ -11,11 +11,7 @@
 
 Practical work from my QA Engineering certification (Mate Academy): test planning, test case design, execution, and bug reporting. Some of it on training apps (Conduit, PetStore, OWASP Juice Shop), some on real live production sites (AIESEC, Domino's Brazil).
 
-Before software QA, I spent 6+ years as a Quality Analyst in automotive manufacturing (IATF 16949 / ISO 9001), as an on-site resident for an OEM client (Stellantis, Nissan). The root-cause logic I use there — 8D, Pareto, Ishikawa — is the same one I applied here to investigate bugs. In that role I also built ARGOSYS, a full-stack quality-inspection system used in the field at WHB/Stellantis.
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+Before software QA, I spent 6+ years as a Quality Analyst in automotive manufacturing (IATF 16949 / ISO 9001), as an on-site resident for an OEM client (Stellantis, Nissan). The root-cause logic I use there — 8D, Pareto, Ishikawa — is the same one I applied here to investigate bugs. In that role I also built ARGOSYS, a full-stack quality-inspection system (React/TypeScript/Supabase) used in the field at WHB/Stellantis.
 
 ## Contents
 
@@ -33,12 +29,12 @@ This repo covers manual QA. For test automation (Playwright, Page Object Model, 
 |---|---|---|---|
 | [Domino's Brazil](./bug-reports/dominos-bugs.md) | Real production | 2 | Major |
 | [AIESEC](./bug-reports/aiesec-bugs.md) | Real production | 2 | Minor |
-| [Bern.com](./bug-reports/bern-bugs.md) | Practice site | 2 | Major |
-| [Global Lives Project](./bug-reports/globallives-bugs.md) | Practice site | 2 | Moderate |
-| [Stellarium](./bug-reports/stellarium-bugs.md) | Practice site | 2 | Minor |
-| [Cinks Labs](./bug-reports/cinks-labs-bugs.md) | Practice site | 2 | Minor |
+| [Bern.com](./bug-reports/bern-bugs.md) | Real production | 2 | Major |
+| [Global Lives Project](./bug-reports/globallives-bugs.md) | Real production | 2 | Moderate |
+| [Stellarium](./bug-reports/stellarium-bugs.md) | Real production | 2 | Minor |
+| [Cinks Labs](./bug-reports/cinks-labs-bugs.md) | Real production | 2 | Minor |
+| [Lumos](./bug-reports/lumos-bugs.md) | Real production | 1 | Moderate |
 | [EnergyTelecom](./bug-reports/energytelecom-bugs.md) | Practice site | 3 | Moderate |
-| [Lumos](./bug-reports/lumos-bugs.md) | Practice site | 1 | Moderate |
 | [OWASP Juice Shop](./bug-reports/juice-shop-checklists.md) | Security training | 6 | Critical |
 | [Sweet Shop](./bug-reports/sweetshop-bugs.md) | Training app | 2 | Moderate |
 | [Conduit (RealWorld)](./bug-reports/conduit-realworld-bugs.md) | Training app | 3 | Major |
@@ -49,8 +45,12 @@ Two worth reading in full: the **Domino's Brazil** checkout bug (real production
 
 ## Stack
 
-SQL, Python, Git, HTML/CSS, JavaScript, Postman, Jira, TestRail, Playwright.
+**Testing:** ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white) ![TestRail](https://img.shields.io/badge/TestRail-65C179?style=flat-square&logoColor=white)
+
+**Web fundamentals:** ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+**From ARGOSYS:** ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 
 ## Contact
 
-jv.santiago@live.com · [LinkedIn](https://linkedin.com/in/jvsanti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jvsanti-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/jvsanti)
